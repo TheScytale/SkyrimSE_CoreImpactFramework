@@ -131,7 +131,7 @@ public:
 	static float ComputeRealMagnitude(const RE::ActiveEffect* a_effect, RE::Actor* a_caster, RE::Actor* a_target,
 		RE::ActorValue a_actorValue = RE::ActorValue::kHealth, float f_deltaTime = 1.0f)
 	{
-		if (!a_effect || !a_effect->effect) return 0.0f;
+		if (!a_effect || !a_effect->effect || !a_effect->effect->baseEffect) return 0.0f;
 
 		const float baseMagnitude = a_effect->effect->GetMagnitude();
 		if (baseMagnitude <= 0.0f) return 0.0f;
