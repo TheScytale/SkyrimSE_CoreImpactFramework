@@ -386,9 +386,9 @@ namespace JSONHandler
 
 			Main::ParseMappingFilterFormJson<RE::TESObjectWEAP, RE::FormID>(j, "Weapons", inc.weapons, false);
 			Main::ParseMappingFilterFormJson<RE::TESObjectWEAP, RE::FormID>(j, "!Weapons", exc.weapons, false);
-			Main::ParseMappingFilterFormJson<RE::BGSKeyword, RE::FormID>(j, "WeaponKeywords", inc.magicItems, true);
-			Main::ParseMappingFilterFormJson<RE::BGSKeyword, RE::FormID>(j, "!WeaponKeywords", exc.magicItems, true);
-			Main::ParseMappingFilterFormJson<RE::BGSKeyword, RE::FormID>(j, "&WeaponKeywords", all.magicItems, true);
+			Main::ParseMappingFilterFormJson<RE::BGSKeyword, RE::FormID>(j, "WeaponKeywords", inc.weaponKeywords, true);
+			Main::ParseMappingFilterFormJson<RE::BGSKeyword, RE::FormID>(j, "!WeaponKeywords", exc.weaponKeywords, true);
+			Main::ParseMappingFilterFormJson<RE::BGSKeyword, RE::FormID>(j, "&WeaponKeywords", all.weaponKeywords, true);
 			Main::ParseMappingFilterFormJson<RE::MagicItem, RE::FormID>(j, "MagicItems", inc.magicItems, false);
 			Main::ParseMappingFilterFormJson<RE::MagicItem, RE::FormID>(j, "!MagicItems", exc.magicItems, false);
 			Main::ParseMappingFilterFormJson<RE::BGSProjectile, RE::FormID>(j, "Projectiles", inc.projectiles, false);
